@@ -1,5 +1,6 @@
 #' A collection of colors
 #' @description what about fonts??
+#' @export
 sf_colors <- c(
   "#D9DBF1",
   "#D0CDD7",
