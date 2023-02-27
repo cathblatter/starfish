@@ -2,43 +2,43 @@
 % Please edit documentation in R/infra-palette.R
 \name{scale_custom}
 \alias{scale_custom}
-\alias{scale_color_discrete_starfish}
-\alias{scale_colour_discrete_starfish}
-\alias{scale_fill_discrete_starfish}
-\alias{scale_color_opinionated_starfish}
-\alias{scale_colour_opinionated_starfish}
-\alias{scale_fill_opinionated_starfish}
-\alias{scale_color_diverging_starfish}
-\alias{scale_colour_diverging_starfish}
-\alias{scale_fill_diverging_starfish}
-\alias{scale_color_continuous_starfish}
-\alias{scale_colour_continuous_starfish}
-\alias{scale_fill_continuous_starfish}
+\alias{scale_color_starfish_d}
+\alias{scale_colour_starfish_d}
+\alias{scale_fill_starfish_d}
+\alias{scale_color_starfish_op}
+\alias{scale_colour_starfish_op}
+\alias{scale_fill_starfish_op}
+\alias{scale_color_starfish_div}
+\alias{scale_colour_starfish_div}
+\alias{scale_fill_starfish_div}
+\alias{scale_color_starfish_c}
+\alias{scale_colour_starfish_c}
+\alias{scale_fill_starfish_c}
 \title{Custom color and fill scales}
 \usage{
-scale_color_discrete_starfish(palette = "starfish", extend = FALSE, ...)
+scale_color_starfish_d(palette = "starfish", extend = FALSE, ...)
 
-scale_colour_discrete_starfish(palette = "starfish", extend = FALSE, ...)
+scale_colour_starfish_d(palette = "starfish", extend = FALSE, ...)
 
-scale_fill_discrete_starfish(palette = "starfish", extend = FALSE, ...)
+scale_fill_starfish_d(palette = "starfish", extend = FALSE, ...)
 
-scale_color_opinionated_starfish(palette = "starfish", ...)
+scale_color_starfish_op(palette = "starfish", ...)
 
-scale_colour_opinionated_starfish(palette = "starfish", extend = FALSE, ...)
+scale_colour_starfish_op(palette = "starfish", ...)
 
-scale_fill_opinionated_starfish(palette = "starfish", ...)
+scale_fill_starfish_op(palette = "starfish", ...)
 
-scale_color_diverging_starfish(palette = "starfish", ...)
+scale_color_starfish_div(palette = "starfish", ...)
 
-scale_colour_diverging_starfish(palette = "starfish", ...)
+scale_colour_starfish_div(palette = "starfish", ...)
 
-scale_fill_diverging_starfish(palette = "starfish", ...)
+scale_fill_starfish_div(palette = "starfish", ...)
 
-scale_color_continuous_starfish(palette = "starfish", ...)
+scale_color_starfish_c(palette = "starfish", ...)
 
-scale_colour_continuous_starfish(palette = "starfish", ...)
+scale_colour_starfish_c(palette = "starfish", ...)
 
-scale_fill_continuous_starfish(palette = "starfish", ...)
+scale_fill_starfish_c(palette = "starfish", ...)
 }
 \arguments{
 \item{palette}{Name of color palette}
@@ -57,5 +57,14 @@ Specific functions include:
 \item{scale}(color/colour/fill)\emph{opinionated_starfish}{Discrete palette with specific values for "good", "bad", and "neutral"}
 \item{scale}(color/colour/fill)\emph{diverging_starfish}{Continuous diverging color palette, must contain negative, neutral and positive values}
 \item{scale}(color/colour/fill)_continuous}{COntinuous color palette}
+}
+}
+\examples{
+\dontrun{
+library(ggplot2)
+ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
+color = cut)) +
+geom_point() +
+scale_color_starfish_d()
 }
 }

@@ -17,12 +17,11 @@
 #'
 #'
 #' @export
-
 theme_starfish <- function(base_theme = ggplot2::theme_minimal(), ...) {
 
   base_theme +
     ggplot2::theme(
-      text = ggplot2::element_text(family = "Sans"),
+      text = ggplot2::element_text(family = "Helvetica"),
       plot.title.position = "plot",
       ...
     )

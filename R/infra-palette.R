@@ -22,7 +22,15 @@ NULL
 
 #' @rdname scale_custom
 #' @export
-scale_color_discrete_starfish <- function(palette = "starfish", extend = FALSE, ...){
+#' @examples
+#' \dontrun{
+#' library(ggplot2)
+#' ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
+#' color = cut)) +
+#' geom_point() +
+#' scale_color_starfish_d()
+#' }
+scale_color_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")
   ggplot2::discrete_scale("colour", "starfish",
@@ -34,11 +42,11 @@ scale_color_discrete_starfish <- function(palette = "starfish", extend = FALSE, 
 
 #' @rdname scale_custom
 #' @export
-scale_colour_discrete_starfish <- scale_color_discrete_starfish
+scale_colour_starfish_d <- scale_color_starfish_d
 
 #' @rdname scale_custom
 #' @export
-scale_fill_discrete_starfish <- function(palette = "starfish", extend = FALSE, ...){
+scale_fill_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")
   ggplot2::discrete_scale("fill", "starfish",
@@ -52,7 +60,7 @@ scale_fill_discrete_starfish <- function(palette = "starfish", extend = FALSE, .
 
 #' @rdname scale_custom
 #' @export
-scale_color_opinionated_starfish <- function(palette = "starfish", ...){
+scale_color_starfish_op <- function(palette = "starfish", ...){
 
   pal <- retrieve_palette(palette, "op")[1:3]
   names(pal) <- c("good", "neutral", "bad")
@@ -62,11 +70,11 @@ scale_color_opinionated_starfish <- function(palette = "starfish", ...){
 
 #' @rdname scale_custom
 #' @export
-scale_colour_opinionated_starfish <- scale_color_discrete_starfish
+scale_colour_starfish_op <- scale_color_starfish_op
 
 #' @rdname scale_custom
 #' @export
-scale_fill_opinionated_starfish <- function(palette = "starfish", ...){
+scale_fill_starfish_op <- function(palette = "starfish", ...){
 
   pal <- retrieve_palette(palette, "op")[1:3]
   names(pal) <- c("good", "neutral", "bad")
@@ -78,7 +86,7 @@ scale_fill_opinionated_starfish <- function(palette = "starfish", ...){
 
 #' @rdname scale_custom
 #' @export
-scale_color_diverging_starfish <- function(palette = "starfish", ...) {
+scale_color_starfish_div <- function(palette = "starfish", ...) {
 
   pal <- retrieve_palette(palette, "div")
   ggplot2::scale_colour_gradient2(low = pal[3],
@@ -90,11 +98,11 @@ scale_color_diverging_starfish <- function(palette = "starfish", ...) {
 
 #' @rdname scale_custom
 #' @export
-scale_colour_diverging_starfish <- scale_color_diverging_starfish
+scale_colour_starfish_div <- scale_color_starfish_div
 
 #' @rdname scale_custom
 #' @export
-scale_fill_diverging_starfish <- function(palette = "starfish", ...) {
+scale_fill_starfish_div <- function(palette = "starfish", ...) {
 
   pal <- retrieve_palette(palette, "div")
   ggplot2::scale_fill_gradient2(low = pal[3],
@@ -108,7 +116,7 @@ scale_fill_diverging_starfish <- function(palette = "starfish", ...) {
 
 #' @rdname scale_custom
 #' @export
-scale_color_continuous_starfish <- function(palette = "starfish", ...) {
+scale_color_starfish_c <- function(palette = "starfish", ...) {
 
   pal <- retrieve_palette(palette, "cont")
   ggplot2::scale_colour_gradient(low = pal[1],
@@ -119,11 +127,11 @@ scale_color_continuous_starfish <- function(palette = "starfish", ...) {
 
 #' @rdname scale_custom
 #' @export
-scale_colour_continuous_starfish <- scale_color_continuous_starfish
+scale_colour_starfish_c <- scale_color_starfish_c
 
 #' @rdname scale_custom
 #' @export
-scale_fill_continuous_starfish <- function(palette = "starfish", ...) {
+scale_fill_starfish_c <- function(palette = "starfish", ...) {
 
   pal <- retrieve_palette(palette, "cont")
   ggplot2::scale_fill_gradient(low = pal[1], high = pal[2], ...)
