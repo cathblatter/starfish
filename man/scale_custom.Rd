@@ -55,7 +55,7 @@ Specific functions include:
 \itemize{
 \item{scale_(color/colour/fill)\emph{discrete_starfish}{Discrete palette with either fixed or dynamically extended number of shades}
 \item{scale}(color/colour/fill)\emph{opinionated_starfish}{Discrete palette with specific values for "good", "bad", and "neutral"}
-\item{scale}(color/colour/fill)\emph{diverging_starfish}{Continuous diverging color palette}
+\item{scale}(color/colour/fill)\emph{diverging_starfish}{Continuous diverging color palette, must contain negative, neutral and positive values}
 \item{scale}(color/colour/fill)_continuous}{COntinuous color palette}
 }
 }

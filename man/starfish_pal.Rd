@@ -9,7 +9,7 @@
 \title{STARFISH palette
 with six dimensions}
 \format{
-An object of class \code{character} of length 6.
+An object of class \code{character} of length 16.
 
 An object of class \code{character} of length 3.
 

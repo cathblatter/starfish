@@ -6,7 +6,7 @@
 #' \itemize{
 #' \item{scale_(color/colour/fill)_discrete_starfish}{Discrete palette with either fixed or dynamically extended number of shades}
 #' \item{scale_(color/colour/fill)_opinionated_starfish}{Discrete palette with specific values for "good", "bad", and "neutral"}
-#' \item{scale_(color/colour/fill)_diverging_starfish}{Continuous diverging color palette}
+#' \item{scale_(color/colour/fill)_diverging_starfish}{Continuous diverging color palette, must contain negative, neutral and positive values}
 #' \item{scale_(color/colour/fill)_continuous}{COntinuous color palette}
 #' }
 #'
@@ -24,11 +24,10 @@ NULL
 #' @export
 scale_color_discrete_starfish <- function(palette = "starfish", extend = FALSE, ...){
 
-  pal <- retrieve_palette(palette, "op")
+  pal <- retrieve_palette(palette, "base")
   ggplot2::discrete_scale("colour", "starfish",
                           manual_pal_flex(pal, extend),
-                          # na.value = "grey50",
-                          na.value = "#ff0000",
+                          na.value = "grey50",
                           ...)
 
 }
@@ -44,8 +43,7 @@ scale_fill_discrete_starfish <- function(palette = "starfish", extend = FALSE, .
   pal <- retrieve_palette(palette, "base")
   ggplot2::discrete_scale("fill", "starfish",
                           manual_pal_flex(pal, extend),
-                          # na.value = "grey50",
-                          na.value = "#ffff00",
+                          na.value = "grey50",
                           ...)
 
 }
@@ -214,11 +212,13 @@ retrieve_palette <- function(name, type = c("base", "op", "div", "cont")){
             call. = FALSE)
 
     if (type %in% c("base", "cont")) pal <- c(pal, pal)
-    # else pal <- c(pal, "darkgrey", pal)
-    else pal <- c(pal, "orange", pal)
+    else pal <- c(pal, "darkgrey", pal)
 
   }
 
+  # unname the vectors for my color scales, otherwise the function
+  # breaks
+  pal <- unname(pal)
   return(pal)
 
 
