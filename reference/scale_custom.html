@@ -10,7 +10,7 @@
     
     <a class="navbar-brand me-2" href="../index.html">starfish</a>
 
-    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1</small>
+    <small class="nav-text text-muted me-auto" data-bs-toggle="tooltip" data-bs-placement="bottom" title="">0.0.1.9000</small>
 
     
     <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
@@ -54,11 +54,23 @@
 <span></span>
 <span><span class="fu">scale_fill_starfish_d</span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"starfish"</span>, extend <span class="op">=</span> <span class="cn">FALSE</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">scale_color_starfish_op</span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"starfish"</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">scale_color_starfish_op</span><span class="op">(</span></span>
+<span>  palette <span class="op">=</span> <span class="st">"starfish"</span>,</span>
+<span>  val_names <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"good"</span>, <span class="st">"neutral"</span>, <span class="st">"bad"</span><span class="op">)</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">scale_colour_starfish_op</span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"starfish"</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">scale_colour_starfish_op</span><span class="op">(</span></span>
+<span>  palette <span class="op">=</span> <span class="st">"starfish"</span>,</span>
+<span>  val_names <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"good"</span>, <span class="st">"neutral"</span>, <span class="st">"bad"</span><span class="op">)</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span>
 <span></span>
-<span><span class="fu">scale_fill_starfish_op</span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"starfish"</span>, <span class="va">...</span><span class="op">)</span></span>
+<span><span class="fu">scale_fill_starfish_op</span><span class="op">(</span></span>
+<span>  palette <span class="op">=</span> <span class="st">"starfish"</span>,</span>
+<span>  val_names <span class="op">=</span> <span class="fu"><a href="https://rdrr.io/r/base/c.html" class="external-link">c</a></span><span class="op">(</span><span class="st">"good"</span>, <span class="st">"neutral"</span>, <span class="st">"bad"</span><span class="op">)</span>,</span>
+<span>  <span class="va">...</span></span>
+<span><span class="op">)</span></span>
 <span></span>
 <span><span class="fu">scale_color_starfish_div</span><span class="op">(</span>palette <span class="op">=</span> <span class="st">"starfish"</span>, <span class="va">...</span><span class="op">)</span></span>
 <span></span>
@@ -86,24 +98,22 @@
 <dt>...</dt>
 <dd><p>Additional arguments to be passed to internal scale function</p></dd>
 
+
+<dt>val_names</dt>
+<dd><p>For opinionated scales, defaults to "good", "neutral", "bad"</p></dd>
+
 </dl></div>
     <div class="section level2">
     <h2 id="details">Details<a class="anchor" aria-label="anchor" href="#details"></a></h2>
-    <p>Specific functions include:</p><ul><li><p>scale_(color/colour/fill)<em>discrete_starfish</em>Discrete palette with either fixed or dynamically extended number of shades
-scale(color/colour/fill)<em>opinionated_starfish</em>Discrete palette with specific values for "good", "bad", and "neutral"
-scale(color/colour/fill)<em>diverging_starfish</em>Continuous diverging color palette, must contain negative, neutral and positive values
-scale(color/colour/fill)_continuousCOntinuous color palette</p></li>
+    <p>Specific functions include:</p><ul><li><p>scale_(color/colour/fill)_starfish_dDiscrete palette with either fixed or dynamically extended number of shades</p></li>
+<li><p>scale_(color/colour/fill)_starfish_opDiscrete palette with specific values for "good", "bad", and "neutral"</p></li>
+<li><p>scale_(color/colour/fill)_starfish_divContinuous diverging color palette, must contain negative, neutral, positive values</p></li>
+<li><p>scale_(color/colour/fill)_starfish_cContinuous color palette</p></li>
 </ul></div>
 
     <div class="section level2">
     <h2 id="ref-examples">Examples<a class="anchor" aria-label="anchor" href="#ref-examples"></a></h2>
-    <div class="sourceCode"><pre class="sourceCode r"><code><span class="r-in"><span><span class="kw"><a href="https://rdrr.io/r/base/library.html" class="external-link">library</a></span><span class="op">(</span><span class="va"><a href="https://ggplot2.tidyverse.org" class="external-link">ggplot2</a></span><span class="op">)</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/ggplot.html" class="external-link">ggplot</a></span><span class="op">(</span><span class="va">diamonds</span><span class="op">[</span><span class="fl">1</span><span class="op">:</span><span class="fl">2000</span>,<span class="op">]</span>, <span class="fu"><a href="https://ggplot2.tidyverse.org/reference/aes.html" class="external-link">aes</a></span><span class="op">(</span>x <span class="op">=</span> <span class="va">cut</span>, y <span class="op">=</span> <span class="va">carat</span>,</span></span>
-<span class="r-in"><span>color <span class="op">=</span> <span class="va">cut</span><span class="op">)</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span><span class="fu"><a href="https://ggplot2.tidyverse.org/reference/geom_point.html" class="external-link">geom_point</a></span><span class="op">(</span><span class="op">)</span> <span class="op">+</span></span></span>
-<span class="r-in"><span><span class="fu">scale_color_starfish_d</span><span class="op">(</span><span class="op">)</span></span></span>
-<span class="r-plt img"><img src="scale_custom-1.png" alt="" width="700" height="433"></span>
-</code></pre></div>
+    
     </div>
   </main><aside class="col-md-3"><nav id="toc"><h2>On this page</h2>
     </nav></aside></div>
