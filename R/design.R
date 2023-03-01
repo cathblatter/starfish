@@ -48,7 +48,7 @@ starfish_pal_div  <- c(starfish_pal[7], starfish_pal[8], starfish_pal[9])
 
 #' Ten-color palette
 #'
-#' @export
+#' @keywords internal
 starfish_pal_ten <-
   c(
     "Cerulean" = "#277da1",
@@ -65,7 +65,7 @@ starfish_pal_ten <-
 
 #' Diverging palette
 #'
-#' @export
+#' @keywords internal
 starfish_seven_diverging <-
   c(
     "Sky blue" = "#8ecae6",
@@ -80,7 +80,7 @@ starfish_seven_diverging <-
 
 #' Pastel palette
 #'
-#' @export
+#' @keywords internal
 starfish_pal2 <-
   c(
     "Charcoal" = "#264653",
