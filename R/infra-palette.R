@@ -32,6 +32,7 @@ NULL
 #' color = cut)) +
 #' geom_point() +
 #' scale_color_starfish_d() +
+#' theme_starfish()
 scale_color_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")

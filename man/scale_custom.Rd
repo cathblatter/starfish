@@ -82,4 +82,5 @@ ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
 color = cut)) +
 geom_point() +
 scale_color_starfish_d() +
+theme_starfish()
 }
