@@ -13,4 +13,4 @@ starfish_pal2
 \description{
 Pastel palette
 }
-\keyword{datasets}
+\keyword{internal}

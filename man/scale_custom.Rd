@@ -22,11 +22,23 @@ scale_colour_starfish_d(palette = "starfish", extend = FALSE, ...)
 
 scale_fill_starfish_d(palette = "starfish", extend = FALSE, ...)
 
-scale_color_starfish_op(palette = "starfish", ...)
+scale_color_starfish_op(
+  palette = "starfish",
+  val_names = c("good", "neutral", "bad"),
+  ...
+)
 
-scale_colour_starfish_op(palette = "starfish", ...)
+scale_colour_starfish_op(
+  palette = "starfish",
+  val_names = c("good", "neutral", "bad"),
+  ...
+)
 
-scale_fill_starfish_op(palette = "starfish", ...)
+scale_fill_starfish_op(
+  palette = "starfish",
+  val_names = c("good", "neutral", "bad"),
+  ...
+)
 
 scale_color_starfish_div(palette = "starfish", ...)
 
@@ -46,6 +58,8 @@ scale_fill_starfish_c(palette = "starfish", ...)
 \item{extend}{Whether to extend discrete color palette to make sufficient colors for levels needed}
 
 \item{...}{Additional arguments to be passed to internal scale function}
+
+\item{val_names}{For opinionated scales, defaults to "good", "neutral", "bad"}
 }
 \description{
 Custom coloring and filling functions based on unique color palettes
@@ -53,10 +67,13 @@ Custom coloring and filling functions based on unique color palettes
 \details{
 Specific functions include:
 \itemize{
-\item{scale_(color/colour/fill)\emph{discrete_starfish}{Discrete palette with either fixed or dynamically extended number of shades}
-\item{scale}(color/colour/fill)\emph{opinionated_starfish}{Discrete palette with specific values for "good", "bad", and "neutral"}
-\item{scale}(color/colour/fill)\emph{diverging_starfish}{Continuous diverging color palette, must contain negative, neutral and positive values}
-\item{scale}(color/colour/fill)_continuous}{COntinuous color palette}
+\item{scale_(color/colour/fill)_starfish_d}{Discrete palette with either fixed or dynamically extended number of shades}
+
+\item{scale_(color/colour/fill)_starfish_op}{Discrete palette with specific values for "good", "bad", and "neutral"}
+
+\item{scale_(color/colour/fill)_starfish_div}{Continuous diverging color palette, must contain negative, neutral, positive values}
+
+\item{scale_(color/colour/fill)_starfish_c}{Continuous color palette}
 }
 }
 \examples{
@@ -64,5 +81,5 @@ library(ggplot2)
 ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
 color = cut)) +
 geom_point() +
-scale_color_starfish_d()
+scale_color_starfish_d() +
 }

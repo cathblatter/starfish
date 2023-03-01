@@ -13,4 +13,4 @@ starfish_seven_diverging
 \description{
 Diverging palette
 }
-\keyword{datasets}
+\keyword{internal}

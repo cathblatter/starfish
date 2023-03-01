@@ -4,16 +4,20 @@
 #'
 #' Specific functions include:
 #' \itemize{
-#' \item{scale_(color/colour/fill)_discrete_starfish}{Discrete palette with either fixed or dynamically extended number of shades}
-#' \item{scale_(color/colour/fill)_opinionated_starfish}{Discrete palette with specific values for "good", "bad", and "neutral"}
-#' \item{scale_(color/colour/fill)_diverging_starfish}{Continuous diverging color palette, must contain negative, neutral and positive values}
-#' \item{scale_(color/colour/fill)_continuous}{COntinuous color palette}
+#' \item{scale_(color/colour/fill)_starfish_d}{Discrete palette with either fixed or dynamically extended number of shades}
+#'
+#' \item{scale_(color/colour/fill)_starfish_op}{Discrete palette with specific values for "good", "bad", and "neutral"}
+#'
+#' \item{scale_(color/colour/fill)_starfish_div}{Continuous diverging color palette, must contain negative, neutral, positive values}
+#'
+#' \item{scale_(color/colour/fill)_starfish_c}{Continuous color palette}
 #' }
 #'
 #' @name scale_custom
 #'
 #' @param palette Name of color palette
 #' @param extend Whether to extend discrete color palette to make sufficient colors for levels needed
+#' @param val_names For opinionated scales, defaults to "good", "neutral", "bad"
 #' @param ... Additional arguments to be passed to internal scale function
 NULL
 
@@ -27,7 +31,7 @@ NULL
 #' ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
 #' color = cut)) +
 #' geom_point() +
-#' scale_color_starfish_d()
+#' scale_color_starfish_d() +
 scale_color_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")
@@ -58,10 +62,12 @@ scale_fill_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
 #' @rdname scale_custom
 #' @export
-scale_color_starfish_op <- function(palette = "starfish", ...){
+scale_color_starfish_op <- function(palette = "starfish",
+                                    val_names = c("good", "neutral", "bad"),
+                                    ...){
 
   pal <- retrieve_palette(palette, "op")[1:3]
-  names(pal) <- c("good", "neutral", "bad")
+  names(pal) <- val_names
   ggplot2::scale_color_manual(values = pal, ...)
 
 }
@@ -72,10 +78,12 @@ scale_colour_starfish_op <- scale_color_starfish_op
 
 #' @rdname scale_custom
 #' @export
-scale_fill_starfish_op <- function(palette = "starfish", ...){
+scale_fill_starfish_op <- function(palette = "starfish",
+                                   val_names = c("good", "neutral", "bad"),
+                                   ...){
 
   pal <- retrieve_palette(palette, "op")[1:3]
-  names(pal) <- c("good", "neutral", "bad")
+  names(pal) <- val_names
   ggplot2::scale_fill_manual(values = pal, ...)
 
 }

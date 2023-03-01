@@ -13,4 +13,4 @@ starfish_pal_ten
 \description{
 Ten-color palette
 }
-\keyword{datasets}
+\keyword{internal}
