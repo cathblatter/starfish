@@ -4,13 +4,14 @@
 #'
 #' Specific functions include:
 #' \itemize{
-#' \item{scale_(color/colour/fill)_starfish_d}{Discrete palette with either fixed or dynamically extended number of shades}
-#'
-#' \item{scale_(color/colour/fill)_starfish_op}{Discrete palette with specific values for "good", "bad", and "neutral"}
-#'
-#' \item{scale_(color/colour/fill)_starfish_div}{Continuous diverging color palette, must contain negative, neutral, positive values}
-#'
-#' \item{scale_(color/colour/fill)_starfish_c}{Continuous color palette}
+#' \item{\code{scale_(color/colour/fill)_starfish_d}
+#' {: Discrete palette with either fixed or dynamically extended number of shades}}
+#' \item{\code{scale_(color/colour/fill)_starfish_op}\\b
+#' {: Discrete palette with fixed colors for "good", "bad", and "neutral"}}
+#' \item{\code{scale_(color/colour/fill)_starfish_div}
+#' {: Continuous diverging color palette, must contain negative, neutral, positive values}}
+#' \item{\code{scale_(color/colour/fill)_starfish_c}
+#' {: Continuous color palette}}
 #' }
 #'
 #' @name scale_custom
@@ -28,6 +29,7 @@ NULL
 #' @export
 #' @examples
 #' library(ggplot2)
+#' library(starfish)
 #' ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
 #' color = cut)) +
 #' geom_point() +
