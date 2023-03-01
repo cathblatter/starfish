@@ -190,12 +190,14 @@ retrieve_palette <- function(name, type = c("base", "op", "div", "cont")){
   pal <- try(utils::getFromNamespace(pal_name, "starfish"))
 
   # if fails, attempt to use base palette
-  if (class(pal) == "try-error") {
+  # if (class(pal) == "try-error")
+  if (methods::is(pal, "try-error")) {
     pal <- try(utils::getFromNamespace(pal_base, "starfish"))
   }
 
   # if base fails, throw error
-  if (class(pal) == "try-error") {
+  # if (class(pal) == "try-error")
+  if (methods::is(pal, "try-error")) {
     stop("No such palette exists. ",
          "Run get_starfish_palettes() to see options. ",
          call. = FALSE)
