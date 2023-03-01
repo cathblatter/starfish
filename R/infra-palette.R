@@ -23,13 +23,11 @@ NULL
 #' @rdname scale_custom
 #' @export
 #' @examples
-#' \dontrun{
 #' library(ggplot2)
 #' ggplot(diamonds[1:2000,], aes(x = cut, y = carat,
 #' color = cut)) +
 #' geom_point() +
 #' scale_color_starfish_d()
-#' }
 scale_color_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")
