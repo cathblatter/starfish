@@ -1,6 +1,6 @@
 Package: starfish
 Title: Internal helpers
-Version: 0.0.1.9000
+Version: 0.0.1.9001
 Authors@R: 
     person("Catherine", "Blatter", , "catherine.blatter@unibas.ch", role = c("aut", "cre"),
            comment = c(ORCID = "0000-0002-4069-7178"))
@@ -15,3 +15,6 @@ BugReports: https://github.com/cathblatter/starfish/issues
 Imports: 
     ggplot2,
     methods
+Depends: 
+    R (>= 2.10)
+LazyData: true
