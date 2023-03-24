@@ -23,6 +23,7 @@ theme_starfish <- function(base_theme = ggplot2::theme_minimal(), ...) {
     ggplot2::theme(
       text = ggplot2::element_text(family = "Helvetica"),
       plot.title.position = "plot",
+      strip.background = ggplot2::element_rect(linewidth = .2),
       ...
     )
 
