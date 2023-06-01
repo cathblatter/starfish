@@ -8,13 +8,13 @@ Description: Floating deep down in the sea starfish lives healthy and happily.
 License: CC BY 4.0
 Encoding: UTF-8
 Roxygen: list(markdown = TRUE)
-RoxygenNote: 7.2.1
+RoxygenNote: 7.2.3
 URL: https://github.com/cathblatter/starfish,
     https://cathblatter.github.io/starfish/
 BugReports: https://github.com/cathblatter/starfish/issues
 Imports: 
     ggplot2,
-    methods, 
+    methods,
     dplyr
 Depends: 
     R (>= 2.10)
