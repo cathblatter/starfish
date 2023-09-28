@@ -17,6 +17,7 @@ starfish_pal <- c(
   # for diverging scales
   "Sky blue" = "#8ecae6",
   "Prussian blue" = "#023047",
+  "Blue Green" = "#219ebc",
   "Selective yellow" = "#ffb703",
   # for more options
   "Blue Green" = "#219ebc",
@@ -42,7 +43,7 @@ starfish_pal_cont <- c(starfish_pal[13], starfish_pal[15])
 #' @name starfish_pal
 #' @export
 # Define three colors for endpoints of diverging continuous palette (high, middle, low)
-starfish_pal_div  <- c(starfish_pal[7], starfish_pal[8], starfish_pal[9])
+starfish_pal_div  <- c(starfish_pal[7], starfish_pal[8], starfish_pal[10])
 
 
 
