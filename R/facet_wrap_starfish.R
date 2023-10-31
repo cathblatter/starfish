@@ -1,6 +1,8 @@
 
 #' STARFISH customized facets with units on right side
 #'
+#' @name facet_custom
+#'
 #' @param facets defaults to variable anon_unit
 #' @param ncol defaults to 1
 #' @param nrow defaults to NULL
@@ -14,7 +16,6 @@
 #' @param dir "h"
 #' @param ... to pass to \code{ggplot2::facet_wrap}
 #'
-#' @name facet_custom
 #' @return a facet
 #' @export
 #'
