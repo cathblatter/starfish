@@ -5,12 +5,20 @@
 \alias{tbl_study_period}
 \title{tbl_study_period}
 \format{
-An object of class \code{data.frame} with 1826 rows and 1 columns.
+An object of class \code{data.frame} with 1826 rows and 5 columns.
 }
 \usage{
 tbl_study_period
 }
 \description{
 a table containing all days of the study period
+\itemize{
+\item as dates
+\item as integer representation
+\item days in month
+\item weekdays
+\item months
+\item weekends
+}
 }
 \keyword{datasets}

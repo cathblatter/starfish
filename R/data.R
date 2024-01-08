@@ -2,8 +2,12 @@
 #' tbl_study_period
 #'
 #' a table containing all days of the study period
-#'
-#'
+#' - as dates
+#' - as integer representation
+#' - days in month
+#' - weekdays
+#' - months
+#' - weekends
 #'
 "tbl_study_period"
 
