@@ -7,16 +7,16 @@ wd_rd <- "/Volumes/research$/STARFISH/"
 #' Internal directories
 #' @description paths to the project directory - data folder
 #' @export
-wd_data_rd <- "/Volumes/research$/STARFISH/01_data/"
+wd_data_rd <- "/Volumes/research$/STARFISH/02_data/"
 
 
 #' Internal directories
 #' @description paths to the project directory - de-id'd data folder
 #' @export
-wd_deidata_rd <- "/Volumes/research$/STARFISH/01_data/00_deidentified-exports/"
+wd_deidata_rd <- "/Volumes/research$/STARFISH/02_data/00_deidentified-exports/"
 
 #' Internal directories
 #' @description paths to the project directory - prepared data folder
 #' @export
-wd_prepdata_rd <- "/Volumes/research$/STARFISH/01_data/01_prepared-data/"
+wd_prepdata_rd <- "/Volumes/research$/STARFISH/02_data/01_prepared-data/"
 
