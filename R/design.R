@@ -9,10 +9,10 @@ NULL
 starfish_pal <- c(
   # base palette
   "Cerulean" = "#006992",
-  "Cambridge blue" = "#8db38b",
-  "Dark spring green" = "#04724d",
   "Hunyadi yellow" = "#f6ae2d",
+  "Cambridge blue" = "#8db38b",
   "Orange (Pantone)" = "#f26419",
+  "Dark spring green" = "#04724d",
   "Cornell red" = "#B31B1B",
   # for diverging scales
   "Sky blue" = "#8ecae6",
