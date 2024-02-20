@@ -33,7 +33,7 @@ starfish_pal <- c(
 #' @name starfish_pal
 #' @export
 # Define opinionated discrete palette (good, neutral, bad)
-starfish_pal_op <- c(starfish_pal[2], "grey50", starfish_pal[5])
+starfish_pal_op <- c(starfish_pal[5], "grey50", starfish_pal[4])
 
 #' @name starfish_pal
 #' @export
@@ -43,7 +43,7 @@ starfish_pal_cont <- c(starfish_pal[13], starfish_pal[15])
 #' @name starfish_pal
 #' @export
 # Define three colors for endpoints of diverging continuous palette (high, middle, low)
-starfish_pal_div  <- c(starfish_pal[7], starfish_pal[8], starfish_pal[10])
+starfish_pal_div  <- c(starfish_pal[8], starfish_pal[7], starfish_pal[10])
 
 
 
