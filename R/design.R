@@ -33,7 +33,7 @@ starfish_pal <- c(
 #' @name starfish_pal
 #' @export
 # Define opinionated discrete palette (good, neutral, bad)
-starfish_pal_op <- c(starfish_pal[5], "grey50", starfish_pal[4])
+starfish_pal_op <- c(starfish_pal[3], "grey50", starfish_pal[4])
 
 #' @name starfish_pal
 #' @export
