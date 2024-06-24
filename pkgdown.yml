@@ -1,8 +1,8 @@
 pandoc: 3.1.11
-pkgdown: 2.0.7
+pkgdown: 2.0.9
 pkgdown_sha: ~
 articles: {}
-last_built: 2024-02-28T15:34Z
+last_built: 2024-06-24T08:46Z
 urls:
   reference: https://cathblatter.github.io/starfish/reference
   article: https://cathblatter.github.io/starfish/articles
