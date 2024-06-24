@@ -38,8 +38,9 @@ NULL
 scale_color_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")
-  ggplot2::discrete_scale("colour", "starfish",
-                          manual_pal_flex(pal, extend),
+  ggplot2::discrete_scale("colour",
+                          # "starfish",
+                          palette = manual_pal_flex(pal, extend),
                           na.value = "grey50",
                           ...)
 
@@ -54,8 +55,9 @@ scale_colour_starfish_d <- scale_color_starfish_d
 scale_fill_starfish_d <- function(palette = "starfish", extend = FALSE, ...){
 
   pal <- retrieve_palette(palette, "base")
-  ggplot2::discrete_scale("fill", "starfish",
-                          manual_pal_flex(pal, extend),
+  ggplot2::discrete_scale(aesthetics = "fill",
+                          # "starfish",
+                          palette = manual_pal_flex(pal, extend),
                           na.value = "grey50",
                           ...)
 
