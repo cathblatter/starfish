@@ -1,69 +1,27 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
-  <url>
-    <loc>https://cathblatter.github.io/starfish/404.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/LICENSE.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/authors.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/index.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/create_table.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/dict_hierarchie.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/dict_pepzeiten.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/facet_custom.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/filter_shifts_where.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/get_starfish_palettes.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/index.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/scale_custom.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/starfish_pal.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/starfish_pal2.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/starfish_pal_ten.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/starfish_seven_diverging.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/tbl_study_period.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/theme_starfish.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/wd_data_rd.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/wd_deidata_rd.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/wd_prepdata_rd.html</loc>
-  </url>
-  <url>
-    <loc>https://cathblatter.github.io/starfish/reference/wd_rd.html</loc>
-  </url>
+<urlset xmlns = 'http://www.sitemaps.org/schemas/sitemap/0.9'>
+<url><loc>https://cathblatter.github.io/starfish/404.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/LICENSE.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/authors.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/index.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/create_table.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/dict_hierarchie.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/dict_pepzeiten.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/facet_custom.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/filter_shifts_where.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/geom_covid_starfish.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/get_starfish_palettes.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/index.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/scale_custom.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/scale_x_starfish_custom.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/starfish_pal.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/starfish_pal2.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/starfish_pal_ten.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/starfish_seven_diverging.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/tbl_study_period.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/theme_starfish.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/wd_data_rd.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/wd_deidata_rd.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/wd_prepdata_rd.html</loc></url>
+<url><loc>https://cathblatter.github.io/starfish/reference/wd_rd.html</loc></url>
 </urlset>
+
