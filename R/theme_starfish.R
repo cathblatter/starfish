@@ -26,7 +26,7 @@ theme_starfish <- function(base_theme = ggplot2::theme_minimal(), ...) {
       strip.background = ggplot2::element_rect(linewidth = .2),
       panel.grid.minor.x = ggplot2::element_blank(),
       axis.ticks.x = ggplot2::element_line(color = "#EBEBEB"),
-      axis.ticks.length = ggplot2::unit(.8, "cm"),
+      axis.ticks.length = ggplot2::unit(.5, "cm"),
       axis.text.x = ggplot2::element_text(hjust = -.2, vjust = 6),
       ...
     )
