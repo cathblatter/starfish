@@ -1,10 +1,11 @@
 
 #' @title Custom starfish date scale
-#' @rdname scale_x_starfish_custom
+#' @rdname scale_x_date_starfish_custom
 #'
 #' @param date_breaks defaults to 1 year
 #' @param date_labels defaults to YYYY
 #' @param ... further args passed
+#' @param expand how to expand the axes
 #'
 #' @return a custom scale
 #' @export
@@ -12,16 +13,18 @@
 
 scale_x_date_starfish <- function(date_breaks = "1 year",
                                   date_labels = "%Y",
+                                  expand = c(.05, 0),
                                   ...){
 
   scale_x <- ggplot2::scale_x_date(date_breaks = date_breaks,
                                    date_labels = date_labels,
+                                   expand = expand,
                                    ...)
   scale_x
 }
 
 
-#' @rdname scale_x_starfish_custom
+#' @rdname scale_x_date_starfish_custom
 #' @export
 scale_x_date_sf <- scale_x_date_starfish
 
