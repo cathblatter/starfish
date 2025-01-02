@@ -18,5 +18,12 @@ wd_deidata_rd <- "/Volumes/research$/STARFISH/02_data/00_deidentified-exports/"
 #' Internal directories
 #' @description paths to the project directory - prepared data folder
 #' @export
-wd_prepdata_rd <- "/Volumes/research$/STARFISH/02_data/01_prepared-data/"
+wd_procdata_rd <- "/Volumes/research$/STARFISH/02_data/01_processed-data/"
+
+
+#' Internal directories
+#' @description paths to the project directory - prepared data folder
+#' @export
+wd_prepdata_rd <- "/Volumes/research$/STARFISH/02_data/02_prepared-data/"
+
 
